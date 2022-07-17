@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.numbers{
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 130px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 12px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  }
+
+  .numbers:hover {
+    background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+  }
+
+  .display {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 140px;
+    width:420px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+  }
+  
+  .display:hover {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .badge{
+    @apply uppercase rounded-full p-2 absolute top-24 ml-2 mt-2 
+}
