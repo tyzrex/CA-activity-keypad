@@ -37,9 +37,15 @@ btn1.onclick = () => {
             count = 0;
             eCode[0] = 65;
         }        
+        
     }
     else{
-        count = 0;     
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[0] = 65;
+        }
+        count = 0;
     }
     count++;
 };
@@ -62,9 +68,15 @@ btn2.onclick = () =>{
         }        
     }
     else{
-        count = 0;     
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[1] = 68;
+        }
+        count = 0;  
     }
     count++;
+    
 };
 
 btn3.onclick = () =>{
@@ -84,7 +96,12 @@ btn3.onclick = () =>{
         }        
     }
     else{
-        count = 0;     
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[2] = 71;
+        }
+        count = 0;   
     }
     count++;
 };
@@ -106,7 +123,12 @@ btn4.onclick = () =>{
         }        
     }
     else{
-        count = 0;     
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[3] = 74;
+        }
+        count = 0;    
     }
     count++;
 };
@@ -128,6 +150,11 @@ btn5.onclick = () =>{
         }        
     }
     else{
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[4] = 77;
+        }
         count = 0;     
     }
     count++;
@@ -156,7 +183,12 @@ btn6.onclick = () =>{
 
     }
     else{
-        count = 0;     
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[5] = 80;
+        }
+        count = 0;    
     }
     count++;
     console.log(count);
@@ -181,6 +213,11 @@ btn7.onclick = () =>{
         }        
     }
     else{
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[6] = 84;
+        }
         count = 0;     
     }
     count++;
@@ -199,23 +236,28 @@ btn8.onclick = () =>{
         enter.onclick = () => {
             disp.innerHTML += charDisplay;
             count = 0;
-            eCode[7] = 86;
+            eCode[7] = 87;
         }        
     }
     else{
-        count = 0;     
+        enter.onclick = () => {
+            disp.innerHTML += 2 ;
+            count = 0;
+            eCode[7] = 87;
+        }
+        count = 0;   
     }
     count++;
 };
 
 btn9.onclick = () =>{
     enter.onclick = () => {
-    disp.innerHTML += 0 ;}
+    disp.innerHTML += "*";}
 }
 
 btn10.onclick = () =>{
     enter.onclick = () => {
-    disp.innerHTML += '*' ;}
+    disp.innerHTML += 0 ;}
 }
 
 btn11.onclick = () =>{
@@ -286,6 +328,11 @@ document.addEventListener("keydown", event => {
     if(event.key==='Enter')
     enter.onclick();
 });
+
+document.addEventListener("keydown",event => {
+    if(event.key==='c')
+        clear.onclick();
+})
 
 const burger = document.getElementById("burger");
 const menu = document.getElementById("menu");
